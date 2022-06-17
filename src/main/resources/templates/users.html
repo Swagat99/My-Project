@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+
+</head>
+
+
+<body>
+<div class="container text-center">
+	 <div>
+        <form th:action="@{/logout}" method="post">
+            <p>
+              <br><br><h1 style="color:#FF4500;"> Welcome <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+            </h1><br><br>
+            <input type="submit" value="Sign Out"  style="background:#ADFF2F"/>
+        </form>
+    </div>
+	
+	
+	</div>
+
+</body>
+</html>

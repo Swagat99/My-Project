@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+
+</head>
+
+
+<body>
+<div class="container text-center">
+	<div><br><h1 style="color:green;">Welcome to my Spring Boot Web Application</h1><br><br>
+	</div>
+	<div>
+		<h3><a th:href="@{/register}"  style="color:#808000;">Register</a> </h3><br>
+		<h3><a th:href="@{/login}"  style="color:#800000;">Login</a> </h3>
+	</div>
+	</div>
+
+</body>
+</html>
